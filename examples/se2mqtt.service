@@ -1,0 +1,12 @@
+[Unit]
+Description=SolarEdge2MQTT
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/solaredge2mqtt
+EnvironmentFile=/home/benoit/solaredge2mqtt/.env
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
