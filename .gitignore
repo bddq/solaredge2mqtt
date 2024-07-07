@@ -163,3 +163,4 @@ test.py
 data.csv
 
 docker/container/
+.DS_Store
